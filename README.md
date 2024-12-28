@@ -1,7 +1,7 @@
 # firefox-neptune
 
-![screenshot](https://github.com/kutsan/firefox-neptune/raw/master/.github/assets/screenshot.jpg)
-![customize-toolbar](https://github.com/kutsan/firefox-neptune/raw/master/.github/assets/customize-toolbar.jpg)
+![screenshot](https://github.com/kutsan/firefox-neptune/raw/master/.github/assets/screenshot.png)
+![customize-toolbar](https://github.com/kutsan/firefox-neptune/raw/master/.github/assets/customize-toolbar.png)
 
 > This is a fork of the Neptune theme for Firefox. The original theme can be found at [yiiyahui/Neptune-Firefox](https://github.com/yiiyahui/Neptune-Firefox). Modifications primarily focus on further simplifying the interface by removing UI elements such as the back, forward, and new tab buttons.
 

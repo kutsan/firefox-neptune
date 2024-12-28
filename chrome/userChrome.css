@@ -44,7 +44,7 @@
 
 	#TabsToolbar {
 		grid-area: 1 / 2 / span 1 / span 1;
-		padding: 12px calc(3 * var(--tab-min-height) + 4 * var(--toolbar-start-end-padding)) 12px 0 !important;
+		padding: 12px 12px 12px 0 !important;
 
 		@media (-moz-bool-pref: "sidebar.verticalTabs") {
 			display: contents;
@@ -313,7 +313,7 @@ textarea:not(#select-translations-panel-text-area) {
 
 		> #urlbar-searchmode-switcher {
 			margin-inline: 0 !important;
-			
+
 			&[open] {
 				background-color: var(--neptune-item-active-background) !important;
 			}
@@ -530,7 +530,7 @@ textarea:not(#select-translations-panel-text-area) {
 			visibility: visible;
 		}
 	}
-	
+
 	.urlbar-page-action:not(#reader-mode-button[readeractive], #picture-in-picture-button[pipactive], #translations-button[translationsactive]) {
 		margin-inline-end: calc(-16px - 2 * var(--urlbar-icon-padding));
 		visibility: collapse;
@@ -816,7 +816,7 @@ textarea:not(#select-translations-panel-text-area) {
 		> .tab-label-container {
 			height: inherit !important;
 		}
-		
+
 		> .tab-close-button {
 			background-color: var(--neptune-button-field-color) !important;
 			fill: ActiveCaption !important;
@@ -903,7 +903,7 @@ textarea:not(#select-translations-panel-text-area) {
 #sidebar-header {
 	border: none !important;
 
-	#sidebar-switcher-target { 
+	#sidebar-switcher-target {
 		padding-block: 0 !important;
 		border-radius: var(--border-radius-small) !important;
 	}
@@ -1208,7 +1208,7 @@ toolbarbutton.subviewbutton:not(.subviewbutton-back),
 		menuseparator {
 			padding-block: 5px !important;
 		}
-		
+
 		.ContentSelectDropdown-item-0:not([_moz-menuactive="true"]) {
 			background-color: var(--menupopup-background-color) !important;
 			color: inherit !important;
@@ -1996,5 +1996,10 @@ tab-group::before,
 #toolbar-menubar,
 #searchmode-switcher-dropmarker,
 #urlbar .search-one-offs {
+	display: none !important;
+}
+
+/* Overrides */
+#back-button, #forward-button, #tabs-newtab-button, #new-tab-button, #unified-extensions-button, #PanelUI-menu-button {
 	display: none !important;
 }
