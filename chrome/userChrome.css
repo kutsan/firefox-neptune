@@ -58,7 +58,7 @@
 
 	#TabsToolbar {
 		grid-area: 1 / 2 / span 1 / span 1;
-		padding: var(--theme-browser-toolbox-padding) calc(3 * var(--tab-min-height) + 4 * var(--toolbar-start-end-padding)) var(--theme-browser-toolbox-padding) 0 !important;
+		padding: 12px 12px 12px 0 !important;
 
 		:root[customizing] & {
 			padding-inline-end: calc(2 * var(--tab-min-height) + 3 * var(--toolbar-start-end-padding)) !important;
@@ -2098,5 +2098,10 @@ tab-group::before,
 #toolbar-menubar,
 #searchmode-switcher-dropmarker,
 #urlbar .search-one-offs {
+	display: none !important;
+}
+
+/* Overrides */
+#back-button, #forward-button, #tabs-newtab-button, #new-tab-button, #unified-extensions-button, #PanelUI-menu-button {
 	display: none !important;
 }
