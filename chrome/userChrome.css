@@ -24,7 +24,7 @@
 		border: none !important;
 
 		:root[inFullscreen] & {
-			padding-inline-start: var(--toolbar-start-end-padding) !important;
+			padding-inline-start: calc(var(--toolbar-start-end-padding) + 4px) !important;
 		}
 
 		:is(#reload-button, #stop-button) > .toolbarbutton-animatable-box > .toolbarbutton-animatable-image {
