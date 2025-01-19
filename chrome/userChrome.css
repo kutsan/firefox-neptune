@@ -667,7 +667,6 @@ textarea:not(#select-translations-panel-text-area) {
 			}
 
 			&[selected]:not([pinned]) {
-				min-width: 100px !important;
 				max-width: 170px !important;
 			}
 
@@ -870,18 +869,6 @@ textarea:not(#select-translations-panel-text-area) {
 
 			#tabbrowser-tabs[closebuttons="activetab"][orient="horizontal"] &:not([selected], [pinned]) {
 				display: revert !important;
-			}
-
-			&:hover {
-				background-color: var(--neptune-button-field-hover-color) !important;
-			}
-
-			&:hover:active {
-				background-color: currentColor !important;
-			}
-
-			tab:hover & {
-				visibility: visible;
 			}
 		}
 
@@ -2104,4 +2091,8 @@ tab-group::before,
 /* Overrides */
 #back-button, #forward-button, #tabs-newtab-button, #new-tab-button, #unified-extensions-button, #PanelUI-menu-button {
 	display: none !important;
+}
+
+.tabbrowser-tab {
+  --tab-label-mask-size: 1em !important;
 }
